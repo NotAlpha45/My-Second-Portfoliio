@@ -1,18 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
 #profile_pic {
   border: 5px solid #037ceee1;
-}
-
-@font-face {
-  font-family: "Kalam";
-  src: url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
-  font-style: normal;
 }
 
 #my-name {
   font-size: 4.5em;
   font-family: "Kalam";
   background: -webkit-linear-gradient(#aee2f9, #0da5e6);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -26,59 +22,18 @@
   background-repeat: no-repeat;
 }
 
-.typewriter {
+.animated-text {
   overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Keep text in a single line */
+  border-right: 0.1em solid orange; /* Blinking cursor */
+  animation: typewriter 3s steps(30) infinite; /* Typewriter animation with delay */
 }
 
-/* Keyframe animation for typewriter effect */
 @keyframes typewriter {
   0% {
-    width: 0; /* Start with no width */
+    width: 0; /* Start and end with no width */
   }
   100% {
-    width: 100%; /* End with full width */
-  }
-}
-
-/* Apply animation to each paragraph within the text container */
-.about-me-line {
-  white-space: nowrap; /* Keep text in a single line */
-  overflow: hidden; /* Hide overflowing text */
-  animation: typewriter 3s steps(30) infinite; /* Adjust animation duration as needed */
-  
-}
-
-/* Apply animation delay to each paragraph */
-.about-me-line:nth-child(1) {
-  animation-delay: 0s; /* Delay for the first line */
-}
-
-.about-me-line:nth-child(2) {
-  animation-delay: 3s; /* Delay for the second line */
-}
-
-.about-me-line:nth-child(3) {
-  animation-delay: 6s; /* Delay for the third line */
-}
-
-/* Cursor animation */
-.typewriter .about-me-line::after {
-  content: "."; /* Cursor character */
-  display: inline-block;
-  width: 0.3em; /* Cursor width */
-  height: 1.2em; /* Cursor height */
-  background-color: orange; /* Cursor color */
-  margin-left: 2px; /* Adjust cursor position */
-  animation: blink 1s infinite; /* Blinking animation */
-}
-
-/* Blinking animation for cursor */
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1; /* Fully visible */
-  }
-  50% {
-    opacity: 0; /* Invisible */
+    width: 100%; /* Typewriter effect */
   }
 }
