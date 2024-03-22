@@ -10,8 +10,8 @@ export default function Home() {
 
 
   return (
-    <div className="container-fluid">
-      <div className="row row-cols-2">
+    <div className="container-fluid bg-dark">
+      <div className="row row-sm">
         <div className={"col d-flex flex-row justify-content-left " + (expanded ? "col-2" : "col-1")}>
           <Navbar
             activeKey={activeKey}

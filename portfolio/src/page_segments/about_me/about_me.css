@@ -3,15 +3,64 @@
 }
 
 @font-face {
-  font-family: Kalam;
+  font-family: "Kalam";
   src: url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+  font-style: normal;
 }
 
-/*Create gradient color*/
 #my-name {
   font-size: 4.5em;
-  font-family: Kalam;
+  font-family: "Kalam";
   background: -webkit-linear-gradient(#aee2f9, #0da5e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/*Add a background image*/
+#about-me-container {
+  background: linear-gradient(
+      rgba(12, 12, 12, 0.5),
+      rgba(0, 0, 0, 0.671)
+    ),
+    url("/images/galaxybg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+.typewriter {
+  position: relative; /* Position relative for cursor positioning */
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Keep text in a single line */
+  animation: typewriter 3s steps(30) infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0; /* Start with no width */
+  }
+  100% {
+    width: 100%; /* End with full width */
+  }
+}
+
+.typewriter::after {
+  content: "|"; /* Cursor character */
+  position: absolute; /* Position cursor relative to .typewriter */
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.3em; /* Adjust cursor width as needed */
+  background-color: orange; /* Cursor color */
+  animation: blink 1s infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
 }
