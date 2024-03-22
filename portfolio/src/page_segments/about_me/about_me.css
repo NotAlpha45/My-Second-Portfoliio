@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 #profile_pic {
   border: 5px solid #037ceee1;
@@ -22,7 +23,19 @@
   background-repeat: no-repeat;
 }
 
+.about-me-line {
+  font-family: "Work Sans";
+  font-size: 1.2em;
+}
+
+.about-me-group:hover {
+  scale: 1.1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .animated-text {
+  width: auto;
   overflow: hidden; /* Hide overflowing text */
   white-space: nowrap; /* Keep text in a single line */
   border-right: 0.1em solid orange; /* Blinking cursor */
