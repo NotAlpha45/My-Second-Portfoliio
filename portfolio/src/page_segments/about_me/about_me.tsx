@@ -23,14 +23,14 @@ export default function AboutMe() {
                         </div>
                     </div>
 
-                    <div id="about-me-segment" className="d-flex flex-column fs-5 mt-5 text-start gap-3 px-4">
+                    <div id="about-me-segment" className="typewriter d-flex flex-column fs-5 mt-5 text-start gap-3 px-4">
                         <div className="d-flex flex-row gap-4">
                             <span><img width="32" height="32" src="https://img.icons8.com/color/48/source-code.png" alt="source-code" /></span>
                             <span className="about-me-line">Developer and Designer</span>
                         </div>
                         <div className="d-flex flex-row gap-4 align-items-center">
                             <span><img width="32" height="32" src="https://img.icons8.com/color/48/compass--v1.png" alt="compass--v1" /></span>
-                            <span className="typewriter about-me-line">An explorer at heart</span>
+                            <span className="about-me-line">An explorer at heart</span>
                         </div>
                         <div className="d-flex flex-row gap-4 align-items-center">
                             <span><img width="32" height="32" src="https://img.icons8.com/color/48/f1-race-car-side-view.png" alt="f1-race-car-side-view" /></span>
