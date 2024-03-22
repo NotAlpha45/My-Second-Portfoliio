@@ -1,0 +1,17 @@
+#profile_pic {
+  border: 5px solid #037ceee1;
+}
+
+@font-face {
+  font-family: Kalam;
+  src: url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+}
+
+/*Create gradient color*/
+#my-name {
+  font-size: 4.5em;
+  font-family: Kalam;
+  background: -webkit-linear-gradient(#aee2f9, #0da5e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
