@@ -13,7 +13,13 @@ export default function Home() {
 
       <div className="row">
         <div className="col d-flex justify-content-center">
-          <CustomNavbar appearance="subtle" activeKey={activeKey} openKeys={openKeys} onOpenChange={(openKeys: string[]) => setOpenKeys(openKeys)} onSelect={(activeKey: string) => setActiveKey(activeKey)} />
+          <CustomNavbar appearance="subtle"
+            activeKey={activeKey}
+            openKeys={openKeys}
+            onOpenChange={(openKeys: string[]) => setOpenKeys(openKeys)}
+            onSelect={(activeKey: string) => setActiveKey(activeKey)}
+            className="fs-6"
+          />
         </div>
       </div>
 
