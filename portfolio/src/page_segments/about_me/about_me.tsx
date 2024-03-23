@@ -46,7 +46,7 @@ export default function AboutMe() {
 
             <div id="explore-me-segment" className="row mt-5">
                 <div className="col-12 d-flex flex-row justify-content-center">
-                    <button className="explore-button btn btn-primary w-25 fs-4 rounded-pill">
+                    <button className="explore-button btn btn-primary w-auto fs-4 rounded-pill">
                         Explore Me!
                     </button>
                 </div>
