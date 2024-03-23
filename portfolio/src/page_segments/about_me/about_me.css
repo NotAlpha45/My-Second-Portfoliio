@@ -1,4 +1,3 @@
-
 #profile_pic {
   border: 5px solid #037ceee1;
 }
@@ -17,9 +16,13 @@
     url("/images/galaxybg.png");
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+/* #intro-row {
+  height: 79vh;
+} */
 
 .about-me-line {
   font-family: "Work Sans";
@@ -30,6 +33,24 @@
   scale: 1.1;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.explore-button {
+  background-color: #037ceee1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  scale: 1.1;
 }
 
 .animated-text {

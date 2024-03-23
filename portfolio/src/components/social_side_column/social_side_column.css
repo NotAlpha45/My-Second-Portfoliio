@@ -3,7 +3,7 @@
     height: 70px;
 } */
 
-.social-icon:hover {
+.social-icon-url:hover {
   scale: 1.1;
   transition: 0.1s;
   cursor: pointer;

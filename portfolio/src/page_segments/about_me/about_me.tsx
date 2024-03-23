@@ -9,7 +9,8 @@ export default function AboutMe() {
     return (
         <div id="about-me-container" className="container-fluid pb-5 h-auto">
 
-            <div className="row py-5 px-2">
+            <div id="intro-row" className="row pt-5">
+
                 <div className="d-flex justify-content-center col-md-4">
                     <Image id="profile_pic" className="rounded-circle" src="/images/me.jpg" alt="Me" width={300} height={300} />
                 </div>
@@ -18,7 +19,7 @@ export default function AboutMe() {
 
                     <div id="intro-segment">
                         <p id="greeting-text" className="text-start fs-4">Hello, I am</p>
-                        <div id="name-segment" className="pt-3 d-flex">
+                        <div id="name-segment" className="pt-4 d-flex">
                             <h1 id="my-name" className="px-4 text-left animated-text">Maheen Hoque</h1>
                         </div>
                     </div>
@@ -43,9 +44,9 @@ export default function AboutMe() {
 
             </div>
 
-            <div id="explore-me-segment" className="row">
+            <div id="explore-me-segment" className="row mt-5">
                 <div className="col-12 d-flex flex-row justify-content-center">
-                    <button className="btn btn-primary">
+                    <button className="explore-button btn btn-primary w-25 fs-4 rounded-pill">
                         Explore Me!
                     </button>
                 </div>
