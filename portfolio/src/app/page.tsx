@@ -1,5 +1,5 @@
 "use client"
-import CustomNavbar from "@/components/navbar";
+import CustomNavbar from "@/components/navbar/navbar";
 import AboutMe from "@/page_segments/about_me/about_me";
 import React from "react";
 

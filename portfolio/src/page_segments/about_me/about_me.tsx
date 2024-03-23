@@ -2,11 +2,7 @@
 
 import Image from "next/image";
 import "./about_me.css";
-import ExploreIcon from '@rsuite/icons/Explore'
-import CodeIcon from '@rsuite/icons/Code'
-import GithubIcon from "@/components/icons/github_icon";
-import LinkedinIcon from "@/components/icons/linkedin_icon";
-import GmailIcon from "@/components/icons/gmail_icon";
+import SocialSideColumn from "@/components/social_side_column/social_side_column";
 
 export default function AboutMe() {
 
@@ -43,19 +39,7 @@ export default function AboutMe() {
                     </div>
                 </div>
 
-                <div className="col-md-2 d-flex flex-column align-items-center justify-content-end my-5 gap-3">
-                    <a href="" className="social-icon rounded-circle p-1">
-                        <GithubIcon width="50" height="50" />
-                    </a>
-
-                    <a href="" className="social-icon rounded-circle p-1">
-                        <LinkedinIcon width="50" height="50" />
-                    </a>
-
-                    <a href="" className="social-icon rounded-circle p-1">
-                        <GmailIcon width="50" height="50" />
-                    </a>
-                </div>
+                <SocialSideColumn />
 
             </div>
 
