@@ -7,14 +7,14 @@ import SocialSideColumn from "@/components/social_side_column/social_side_column
 export default function AboutMe() {
 
     return (
-        <div id="about-me-container" className="container-fluid pb-5">
+        <div id="about-me-container" className="container-fluid pb-5 h-auto">
 
             <div className="row py-5 px-2">
                 <div className="d-flex justify-content-center col-md-4">
                     <Image id="profile_pic" className="rounded-circle" src="/images/me.jpg" alt="Me" width={300} height={300} />
                 </div>
 
-                <div className="col-md-6 text-white d-flex flex-column">
+                <div className="col-md text-white d-flex flex-column">
 
                     <div id="intro-segment">
                         <p id="greeting-text" className="text-start fs-4">Hello, I am</p>
