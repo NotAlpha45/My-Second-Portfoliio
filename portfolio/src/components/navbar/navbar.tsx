@@ -1,6 +1,8 @@
 "use client"
 
 import { Navbar, Nav } from "rsuite"
+import Link from "next/link"
+import "./navbar.css"
 
 //@ts-ignore
 export default function CustomNavbar({ appearance, openKeys, onOpenChange, ...navProps }) {
@@ -13,18 +15,17 @@ export default function CustomNavbar({ appearance, openKeys, onOpenChange, ...na
 
     return (
         <>
-            <Navbar appearance={appearance} {...navProps}>
-                <Nav>
-                    {navOptions.map((option, index) => {
-                        return (
-                            <Nav.Item className="text-white" key={index} eventKey={(index + 1).toString()}>
-                                {option}
-                            </Nav.Item>
-                        )
-                    })}
-                </Nav>
 
-            </Navbar>
+            <Nav className="pb-2 pt-2 d-flex fs-6">
+                {navOptions.map((option, index) => {
+                    return (
+                        <Nav.Item key={index} eventKey={(index + 1).toString()} >
+                            {option}
+                        </Nav.Item>
+                    )
+                })}
+            </Nav>
+
         </>
     )
 }

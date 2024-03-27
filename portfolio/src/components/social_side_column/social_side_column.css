@@ -18,15 +18,15 @@
 
 #github-url:hover + #github-label {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 #gmail-url:hover + #gmail-label {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 #linkedin-url:hover + #linkedin-label {
   display: block;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }

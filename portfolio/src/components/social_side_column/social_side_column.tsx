@@ -12,7 +12,7 @@ import "./social_side_column.css"
 export default function SocialSideColumn() {
   return (
     <>
-      <div className="col-md-2 d-flex flex-column align-items-center justify-content-end mt-5">
+      <div className="col d-flex flex-column align-items-center justify-content-end mt-5">
 
         <a href="https://github.com/NotAlpha45" target="_blank" id="github-url" className="social-icon-url rounded-circle p-2 mt-4">
           <GithubIcon width="50" height="50" />

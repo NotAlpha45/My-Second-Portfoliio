@@ -3,6 +3,7 @@
 import Image from "next/image";
 import "./about_me.css";
 import SocialSideColumn from "@/components/social_side_column/social_side_column";
+import ExploreButton from "@/components/explore_button/explore_button";
 
 export default function AboutMe() {
 
@@ -15,12 +16,12 @@ export default function AboutMe() {
                     <Image id="profile_pic" className="rounded-circle" src="/images/me.jpg" alt="Me" width={300} height={300} />
                 </div>
 
-                <div className="col-md text-white d-flex flex-column">
+                <div className="col-auto text-white d-flex flex-column">
 
                     <div id="intro-segment">
                         <p id="greeting-text" className="text-start fs-4">Hello, I am</p>
                         <div id="name-segment" className="pt-4 d-flex">
-                            <h1 id="my-name" className="px-4 text-left animated-text">Maheen Hoque</h1>
+                            <h1 id="my-name" className="px-4 text-left">Maheen Hoque</h1>
                         </div>
                     </div>
 
@@ -46,9 +47,7 @@ export default function AboutMe() {
 
             <div id="explore-me-segment" className="row mt-5">
                 <div className="col-12 d-flex flex-row justify-content-center">
-                    <button className="explore-button btn btn-primary w-auto fs-4 rounded-pill">
-                        Explore Me!
-                    </button>
+                    <ExploreButton />
                 </div>
             </div>
 

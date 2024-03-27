@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css"
 import { CustomProvider } from "rsuite";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
