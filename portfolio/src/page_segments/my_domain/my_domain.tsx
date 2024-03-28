@@ -3,6 +3,7 @@
 import React from 'react'
 import "./my_domain.css"
 import DomainCarousel from '@/components/domain_carousel/domain_carousel'
+import CarouselCard from '@/components/carousel_card/carousel_card'
 
 export default function MyDomain() {
     return (
@@ -16,7 +17,7 @@ export default function MyDomain() {
 
             <div className='row d-flex justify-content-center mt-5'>
                 <div className="col-md-6">
-                    <DomainCarousel />
+                    <CarouselCard />
                 </div>
             </div>
         </div>
