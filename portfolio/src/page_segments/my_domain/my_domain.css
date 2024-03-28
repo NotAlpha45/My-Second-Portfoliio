@@ -1,0 +1,20 @@
+#my-domain-container {
+  background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.671)),
+    url("/images/orion-nebula.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.domain-title {
+  font-size: 4.5em;
+  font-family: "Kalam";
+  font-weight: 700;
+}
+
+#domain-writing {
+  background: -webkit-linear-gradient(#aee2f9, #0da5e6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

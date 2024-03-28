@@ -1,0 +1,15 @@
+.explore-button {
+  background-image: linear-gradient(90deg, rgb(4, 133, 176), rgb(111, 3, 157));
+  font-family: Kalam;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 12rem;
+}
+
+.explore-button:hover {
+  scale: 1.1;
+  transition:all 0.2s;
+}

@@ -1,6 +1,7 @@
 "use client"
 import CustomNavbar from "@/components/navbar/navbar";
 import AboutMe from "@/page_segments/about_me/about_me";
+import MyDomain from "@/page_segments/my_domain/my_domain";
 import React from "react";
 
 export default function Home() {
@@ -23,9 +24,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row-auto">
         <div className="col justify-content-left">
           <AboutMe />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col justify-content-left">
+          <MyDomain />
         </div>
       </div>
 

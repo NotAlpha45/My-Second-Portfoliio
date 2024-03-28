@@ -10,7 +10,7 @@ export default function AboutMe() {
     return (
         <div id="about-me-container" className="container-fluid pb-5 h-auto">
 
-            <div id="intro-row" className="row pt-5">
+            <div id="intro-row" className="row d-flex align-items-center pt-5">
 
                 <div className="d-flex justify-content-center col-md-4">
                     <Image id="profile_pic" className="rounded-circle" src="/images/me.jpg" alt="Me" width={300} height={300} />
