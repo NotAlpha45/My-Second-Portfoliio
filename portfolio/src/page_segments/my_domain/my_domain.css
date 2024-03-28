@@ -18,3 +18,15 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 900px) {
+  .domain-title {
+    font-size: 3em;
+  }
+
+  .domain-card-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

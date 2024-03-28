@@ -8,6 +8,7 @@ export type SVGIconProps = {
 export type CarouselCardProps = {
   cardHeader?: string;
   cardBody?: string;
+  cardImgUrl?: string;
 
   statsPanelData?: {
     noOfProjects?: string;
