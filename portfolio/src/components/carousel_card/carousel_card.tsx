@@ -11,9 +11,9 @@ export default function CarouselCard(props: CarouselCardProps) {
 
 
             <Panel className='outer-panel' shaded bordered bodyFill >
-                
+
                 <img className='panel-img' src={props.cardImgUrl ? props.cardImgUrl : "https://via.placeholder.com/240x240"} />
-                
+
                 <Panel className='inner-panel'>
                     <h1 className='panel-header'>
                         {props?.cardHeader}
@@ -46,6 +46,15 @@ export default function CarouselCard(props: CarouselCardProps) {
                                 <div className='stats-segment d-flex flex-column align-items-center gap-1'>
                                     <span className='stats-value'>{props?.statsPanelData?.noOfLibraries}</span>
                                     <span className='stats-label'>Libraries</span>
+                                </div>
+                            ) : null
+                        }
+
+                        {
+                            props?.statsPanelData?.years ? (
+                                <div className='stats-segment d-flex flex-column align-items-center gap-1'>
+                                    <span className='stats-value'>{props?.statsPanelData?.years}</span>
+                                    <span className='stats-label'>Years</span>
                                 </div>
                             ) : null
                         }

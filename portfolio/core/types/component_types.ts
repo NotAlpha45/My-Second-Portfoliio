@@ -14,5 +14,6 @@ export type CarouselCardProps = {
     noOfProjects?: string;
     noOfLanguages?: string;
     noOfLibraries?: string;
+    years?: string;
   };
 };

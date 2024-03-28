@@ -19,11 +19,12 @@ export default function MyDomain() {
                     <CarouselCard
                         cardHeader='Web Development'
                         cardImgUrl='/images/web-development.jpg'
-                        cardBody='I have been developing websites for over 3 years now. I have worked on a variety of projects ranging from small static websites to large scale web applications.'
+                        cardBody='I have worked on a variety of projects ranging from small static websites to large scale web applications.'
                         statsPanelData={{
                             noOfProjects: '10+',
-                            noOfLanguages: '5+',
-                            noOfLibraries: '7+'
+                            noOfLanguages: '3',
+                            noOfLibraries: '10+',
+                            years: '3+'
                         }}
                     />
                 </div>
@@ -35,9 +36,8 @@ export default function MyDomain() {
                         cardBody='I have a keen interest in designing user interfaces and user experiences and have perfected
                         my understanding of design principles and tools over the years.'
                         statsPanelData={{
-                            noOfProjects: '5+',
-                            noOfLanguages: '2+',
-                            noOfLibraries: '3+'
+                            noOfProjects: '3',
+                            years: '1+'
                         }}
                     />
                 </div>
@@ -45,12 +45,13 @@ export default function MyDomain() {
                 <div className='col-md-3 d-flex justify-content-center'>
                     <CarouselCard
                         cardHeader='Data Science'
-                        cardBody='I have been working on data science projects for 3 years. I have worked on a variety of projects ranging from small data analysis tasks to large scale machine learning projects.'
+                        cardBody='I have worked on a variety of projects ranging from small data analysis tasks to large scale machine learning projects.'
                         cardImgUrl='/images/data-analysis.png'
                         statsPanelData={{
-                            noOfProjects: '5+',
-                            noOfLanguages: '3+',
-                            noOfLibraries: '5+'
+                            noOfProjects: '10+',
+                            noOfLanguages: '3',
+                            noOfLibraries: '7+',
+                            years: '3+'
                         }}
                     />
                 </div>
