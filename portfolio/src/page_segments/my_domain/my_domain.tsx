@@ -14,7 +14,7 @@ export default function MyDomain() {
                 </div>
             </div>
 
-            <div className='domain-card-row row d-flex justify-content-evenly mt-5 gap-4'>
+            <div className='domain-card-row row d-flex justify-content-evenly mt-5 row-gap-4'>
                 <div className='col-md-3 d-flex justify-content-center'>
                     <CarouselCard
                         cardHeader='Web Development'

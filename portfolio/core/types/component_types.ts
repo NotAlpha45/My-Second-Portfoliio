@@ -17,3 +17,18 @@ export type CarouselCardProps = {
     years?: string;
   };
 };
+
+export type CustomButtonProps = {
+  label?: string;
+  callback?: () => void;
+};
+
+export type CustomNavbarProps = {
+  navOptionsAndCallback?: Map<string, () => void>;
+};
+
+export type SocialSnippetProps = {
+  snippetUrl?: string;
+  snippetElement: React.JSX.Element;
+  snippetText?: string;
+};
