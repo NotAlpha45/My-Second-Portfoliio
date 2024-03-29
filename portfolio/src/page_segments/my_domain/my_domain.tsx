@@ -6,7 +6,7 @@ import CarouselCard from '@/components/carousel_card/carousel_card'
 
 export default function MyDomain() {
     return (
-        <div id="my-domain-container" className="container-fluid pb-5 h-auto">
+        <div id="my-domain-container" className="container-fluid pb-5 d-flex flex-column justify-content-center">
             <div className='row d-flex'>
                 <div className='col-md-12 d-flex justify-content-center mt-5'>
                     <span className='domain-title text-white display-4'>My</span>

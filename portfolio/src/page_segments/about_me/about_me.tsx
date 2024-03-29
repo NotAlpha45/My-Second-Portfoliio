@@ -12,7 +12,7 @@ type AboutMeProps = {
 export default function AboutMe(props: AboutMeProps) {
 
     return (
-        <div id="about-me-container" className="container-fluid pb-5 h-auto">
+        <div id="about-me-container" className="container-fluid pb-5 d-flex flex-column justify-content-center">
 
             <div id="intro-row" className="row d-flex align-items-center pt-5">
 

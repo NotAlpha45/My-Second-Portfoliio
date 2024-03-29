@@ -25,27 +25,27 @@ export default function Home() {
 
 
   return (
-    <div className="container-fluid bg-dark">
-
-      <div className="row">
-        <div className="col d-flex justify-content-center">
-          <CustomNavbar navOptionsAndCallback={navOptionAndCallback}
-          />
-        </div>
+    <>
+      
+      <div className="d-flex justify-content-center bg-dark position-fixed w-100 z-3">
+        <CustomNavbar navOptionsAndCallback={navOptionAndCallback}
+        />
       </div>
 
-      <div id="about-me-row" className="row-auto">
-        <div className="col justify-content-left">
-          <AboutMe exploreButtonCallback={() => { scrollTo("my-domain-row") }} />
+      <div className="container-fluid bg-dark">
+        <div id="about-me-row" className="row-auto pt-5">
+          <div className="col justify-content-left">
+            <AboutMe exploreButtonCallback={() => { scrollTo("my-domain-row") }} />
+          </div>
         </div>
-      </div>
 
-      <div id="my-domain-row" className="row">
-        <div className="col justify-content-left">
-          <MyDomain />
+        <div id="my-domain-row" className="row">
+          <div className="col justify-content-left">
+            <MyDomain />
+          </div>
         </div>
-      </div>
 
-    </div>
+      </div>
+    </>
   );
 }
