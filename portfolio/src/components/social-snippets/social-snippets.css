@@ -1,0 +1,26 @@
+.social-icon:hover {
+  scale: 1.1;
+  transition: 0.1s;
+  cursor: pointer;
+  border: 3px solid #037ceee1;
+}
+
+.social-icon-label {
+  display: none;
+  visibility: hidden;
+}
+
+.social-icon:hover + .social-icon-label {
+  visibility: visible;
+  display: block;
+  position: absolute;
+  margin-top: 2.5%;
+  margin-left: 12%;
+}
+
+@media (max-width: 900px) {
+  .social-icon:hover + .social-icon-label {
+    margin-top: -3%;
+    margin-left: 0%;
+  }
+}

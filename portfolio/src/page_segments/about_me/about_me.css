@@ -12,6 +12,7 @@
 
 /*Add a background image*/
 #about-me-container {
+  height: 100vh;
   background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.671)),
     url("/images/galaxybg.png");
   background-size: cover;
@@ -67,5 +68,34 @@
   }
   100% {
     width: 100%; /* Typewriter effect */
+  }
+}
+
+@media (max-width: 900px) {
+  #about-me-container {
+    height: 100%;
+  }
+
+  #intro-row {
+    height: 100%;
+  }
+
+  #my-name {
+    font-size: 3em;
+  }
+
+  .about-me-line {
+    font-size: 1em;
+  }
+
+  .about-me-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-button {
+    padding: 5px 10px;
+    font-size: 12px;
   }
 }

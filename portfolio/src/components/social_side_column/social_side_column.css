@@ -2,15 +2,27 @@
     width: 70px;
     height: 70px;
 } */
-
-.social-icon-url:hover {
+/* 
+.social-icon:hover {
   scale: 1.1;
   transition: 0.1s;
   cursor: pointer;
   border: 3px solid #037ceee1;
 }
 
-#github-label,
+.social-icon-label {
+  display: none;
+  visibility: hidden;
+}
+
+.social-icon:hover + .social-icon-label {
+  position: absolute;
+  visibility: visible;
+  display: block;
+  margin-top: -60%;
+} */
+
+/* #github-label,
 #gmail-label,
 #linkedin-label {
   display: none;
@@ -29,4 +41,4 @@
 #linkedin-url:hover + #linkedin-label {
   display: block;
   margin-top: 1em;
-}
+} */

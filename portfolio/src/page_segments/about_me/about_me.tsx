@@ -5,10 +5,14 @@ import "./about_me.css";
 import SocialSideColumn from "@/components/social_side_column/social_side_column";
 import ExploreButton from "@/components/explore_button/explore_button";
 
-export default function AboutMe() {
+type AboutMeProps = {
+    exploreButtonCallback?: () => void;
+};
+
+export default function AboutMe(props: AboutMeProps) {
 
     return (
-        <div id="about-me-container" className="container-fluid pb-5 h-auto">
+        <div id="about-me-container" className="container-fluid pb-5 d-flex flex-column justify-content-center">
 
             <div id="intro-row" className="row d-flex align-items-center pt-5">
 
@@ -47,7 +51,7 @@ export default function AboutMe() {
 
             <div id="explore-me-segment" className="row mt-5">
                 <div className="col-12 d-flex flex-row justify-content-center">
-                    <ExploreButton />
+                    <ExploreButton callback={props?.exploreButtonCallback} />
                 </div>
             </div>
 

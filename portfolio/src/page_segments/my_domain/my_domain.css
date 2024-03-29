@@ -1,4 +1,5 @@
 #my-domain-container {
+  height: 100vh;
   background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.671)),
     url("/images/orion-nebula.jpg");
   background-size: cover;
@@ -17,4 +18,20 @@
   background: -webkit-linear-gradient(#aee2f9, #0da5e6);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 900px) {
+  #my-domain-container {
+    height: 100%;
+  }
+
+  .domain-title {
+    font-size: 3em;
+  }
+
+  .domain-card-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
